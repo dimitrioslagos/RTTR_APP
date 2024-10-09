@@ -11,6 +11,9 @@ if 'models_exist' not in st.session_state:
 if 'models_training' not in st.session_state:
     st.session_state.models_training = False
 
+# Create the directory
+os.makedirs('models', exist_ok=True)
+
 def models_exist():
     return len(os.listdir('models'))>=1
 def delete_models():
