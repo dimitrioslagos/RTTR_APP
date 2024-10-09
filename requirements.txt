@@ -8,5 +8,4 @@ configparser
 quantile_forest 
 joblib
 plotly
-sklearn
 scikit-learn
